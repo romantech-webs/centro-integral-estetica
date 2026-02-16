@@ -1,281 +1,347 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ",
+  logo: "/images/logo.png",
+  tagline: "Tu belleza en las mejores manos de Ciudad Real",
+  description: "Centro Integral Estética Vanesa López es tu centro de referencia en Ciudad Real con más de 19 años cuidando la belleza de nuestras clientas. Especializadas en depilación, manicura y pedicura profesional, tratamientos faciales y maquillaje. Con 4.7 estrellas en Google y clientas que confían en nosotras desde hace más de una década, ofrecemos resultados visibles con un trato excepcional y personalizado.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#a97b61",
+    secondary: "#33251d",
+    accent: "#b7a7a6",
+    neutral: "#f8f4f2"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
+  phone: "616 29 97 01",
+  whatsapp: "+34616299701",
   whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "C. Estación Vía Crucis, 2, 13003 Ciudad Real, España",
+    city: "Ciudad Real",
+    province: "",
+    postalCode: "13003",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=18419953488790193623&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=CENTRO%20INTEGRAL%20EST%C3%89TICA%20VANESA%20L%C3%93PEZ%20%4038.9897%2C-3.9288&z=16&output=embed",
+  coordinates: {
+    lat: 38.9897,
+    lng: -3.9288
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes",
+      hours: "Cerrado"
+    },
+    {
+      days: "martes - viernes",
+      hours: "10:00–14:00, 16:00–20:00"
+    },
+    {
+      days: "sábado",
+      hours: "10:00–14:00"
+    },
+    {
+      days: "domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
     rating: 4.7,
-    count: 190,
-    url: "#",
+    count: 47,
+    url: "https://maps.google.com/?cid=18419953488790193623&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Nieves Del",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Maravilla de trabajo el que hacen aquí, llevo viniendo a este centro 19 años y cada día estoy más contenta de el resultado de cada experiencia. El mejor centro para cuidar de tu belleza. Son las mejores manos que me han tratado. Gracias por cuidar de nuestra piel día tras día",
+        date: "Hace un año"
       },
       {
-        author: "Javier Padilla",
+        author: "Sara Naranjo",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Unas profesionales de manual. Llevo en sus manos más de 10 años y pese a no vivir ya en ciudad real siempre que voy paso a hacerme algún trabajo. Son excelentes, tanto en depilación, manicura y pedicura, maquillajes y cualquier tratamiento.",
+        date: "Hace 2 años"
       },
       {
-        author: "Melanie Ponce",
+        author: "saray lopez",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Vanesa es una gran profesional en el sector, todos los servicios son de 10. Raquel es una maravilla con sus manicuras y pedicuras. Trato excelente de ambas, siempre ofreciendo lo mejor de ellas y de la marca.",
+        date: "Hace 2 años"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Laura Cabrera Caballero",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Fui a dar forma y depilar cejas y no pude salir más contenta con el servicio. Existen un montón de servicios que hacen de manera excepcional. Centro de belleza que recomiendo en Ciudad Real.",
+        date: "Hace un año"
       },
-    ],
+      {
+        author: "diana gomez",
+        rating: 5,
+        text: "Las chicas son súper agradables y profesionales.\nSi buscas un sitio del que salir radiante, este es el adecuado :)",
+        date: "Hace 6 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
-    },
-    {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
-    },
-    {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
-    },
-    {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
-    },
-    {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "depilacion",
+      name: "Depilación Profesional",
+      description: "Técnicas de depilación avanzadas con resultados impecables y duraderos. Especialistas en diseño y depilación de cejas, consiguiendo la forma perfecta para tu rostro. Tratamientos adaptados a cada tipo de piel con productos de alta calidad.",
+      benefits: [
+        "Resultados profesionales y duraderos",
+        "Diseño personalizado de cejas",
+        "Técnicas suaves y efectivas"
+      ],
+      icon: "Flower2"
     },
     {
       id: "manicura-pedicura",
       name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      description: "Cuidado completo de manos y pies con acabados impecables que perduran. Nuestras manicuras y pedicuras son reconocidas por su calidad excepcional y atención al detalle. Utilizamos esmaltes premium y técnicas profesionales para un resultado de 10.",
+      benefits: [
+        "Acabados profesionales de larga duración",
+        "Cuidado integral de uñas y cutículas",
+        "Productos y esmaltes de primera calidad"
+      ],
+      icon: "Hand"
+    },
+    {
+      id: "tratamientos-faciales",
+      name: "Tratamientos Faciales",
+      description: "Cuidados personalizados para cada tipo de piel con productos premium. Tratamientos de hidratación profunda, antiedad y luminosidad que transforman tu rostro. Protocolos específicos diseñados para conseguir una piel radiante y saludable.",
+      benefits: [
+        "Diagnóstico personalizado de tu piel",
+        "Productos profesionales de alta gama",
+        "Resultados visibles desde la primera sesión"
+      ],
+      icon: "Sparkles"
+    },
+    {
+      id: "maquillaje",
+      name: "Maquillaje Profesional",
+      description: "Servicio de maquillaje para eventos especiales, bodas y ocasiones importantes. Técnicas profesionales que realzan tu belleza natural con acabados impecables. Asesoramiento personalizado para conseguir el look perfecto para tu evento.",
+      benefits: [
+        "Maquillaje adaptado a cada ocasión",
+        "Productos de larga duración",
+        "Asesoramiento de imagen personalizado"
+      ],
+      icon: "Eye"
+    },
+    {
+      id: "tratamientos-corporales",
+      name: "Tratamientos Corporales",
+      description: "Tratamientos reductores, reafirmantes y anticelulíticos con tecnología avanzada. Protocolos personalizados que combinan técnicas manuales y aparatología de última generación. Resultados medibles para conseguir la silueta que deseas.",
+      benefits: [
+        "Tecnología de última generación",
+        "Planes personalizados y efectivos",
+        "Seguimiento continuo de resultados"
+      ],
+      icon: "Zap"
+    },
+    {
+      id: "micropigmentacion",
+      name: "Micropigmentación",
+      description: "Maquillaje semipermanente para cejas, labios y ojos con resultados naturales y armoniosos. Técnicas precisas que realzan tus rasgos de forma sutil y elegante. Despierte cada día perfectamente maquillada sin esfuerzo.",
+      benefits: [
+        "Resultados naturales y duraderos",
+        "Diseño personalizado según tus facciones",
+        "Ahorro de tiempo en tu rutina diaria"
+      ],
+      icon: "Heart"
     },
     {
       id: "extensiones-pestanas",
       name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      description: "Mirada impactante con extensiones pelo a pelo aplicadas con técnica profesional. Conseguimos un efecto natural o más voluminoso según tus preferencias. Productos hipoalergénicos de máxima calidad para un resultado espectacular.",
+      benefits: [
+        "Mirada más intensa y expresiva",
+        "Aplicación pelo a pelo profesional",
+        "Duración prolongada con cuidados adecuados"
+      ],
+      icon: "Eye"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "depilacion-laser",
+      name: "Depilación Láser",
+      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos adaptados a cada tipo de piel y vello. Di adiós al vello no deseado con resultados permanentes y piel suave.",
+      benefits: [
+        "Eliminación permanente del vello",
+        "Tecnología láser avanzada y segura",
+        "Sesiones rápidas y resultados duraderos"
+      ],
+      icon: "Zap"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Contacta con Nosotras",
+      description: "Llámanos al 616 29 97 01 o escríbenos por WhatsApp para reservar tu cita. Te asesoraremos sobre el tratamiento más adecuado para ti y resolveremos todas tus dudas."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Consulta Personalizada",
+      description: "En tu primera visita analizamos tus necesidades específicas y el estado actual de tu piel o zona a tratar. Diseñamos un plan personalizado con los tratamientos más efectivos para conseguir tus objetivos."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tratamiento Profesional",
+      description: "Realizamos tu tratamiento con técnicas avanzadas, productos premium y la experiencia de más de 19 años cuidando la belleza. Cada sesión es una experiencia relajante donde te sentirás en las mejores manos."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Resultados y Seguimiento",
+      description: "Disfruta de resultados visibles y duraderos que superarán tus expectativas. Te acompañamos con un seguimiento personalizado y consejos profesionales para mantener y potenciar los resultados obtenidos."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Más de 19 Años de Experiencia",
+      description: "Llevamos casi dos décadas cuidando la belleza en Ciudad Real con resultados excepcionales. Nuestras clientas confían en nosotras año tras año, muchas desde hace más de una década, porque saben que están en las mejores manos. La experiencia se nota en cada tratamiento.",
+      icon: "Sparkles"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Valoración 4.7★ en Google",
+      description: "Con 47 reseñas en Google y una valoración de 4.7 estrellas, nuestras clientas avalan la calidad excepcional de nuestros servicios. Destacan especialmente nuestra profesionalidad, el trato excelente y los resultados visibles en cada tratamiento. Tu satisfacción es nuestra mejor carta de presentación.",
+      icon: "Heart"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Equipo Profesional Especializado",
+      description: "Vanesa y Raquel forman un equipo de profesionales altamente cualificadas, cada una especializada en su área. Vanesa es experta en tratamientos de estética integral y depilación, mientras que Raquel destaca por sus manicuras y pedicuras excepcionales. Juntas ofrecen un servicio completo de máxima calidad.",
+      icon: "Hand"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Especialistas en Depilación y Manicura",
+      description: "Somos reconocidas en Ciudad Real por la excelencia de nuestros servicios de depilación, especialmente diseño de cejas, y por nuestras manicuras y pedicuras de calidad superior. Utilizamos técnicas avanzadas y productos premium que garantizan resultados impecables y duraderos que superan las expectativas.",
+      icon: "Flower2"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Vanesa López",
+      role: "Directora y Especialista en Estética",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
+      bio: "Profesionales apasionadas por la belleza y el cuidado personal. En CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ nos dedicamos a realzar la belleza natural de cada clienta con tratamientos de calidad."
     },
+    {
+      name: "Raquel",
+      role: "Especialista en Manicura y Pedicura",
+      image: "/images/team/placeholder.jpg",
+      bio: "Profesionales apasionadas por la belleza y el cuidado personal. En CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ nos dedicamos a realzar la belleza natural de cada clienta con tratamientos de calidad."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ - Imagen 1"
+    },
+    {
+      src: "/images/gallery/2.webp",
+      alt: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ - Imagen 3"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ - Imagen 4"
+    },
+    {
+      src: "/images/gallery/5.webp",
+      alt: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ - Imagen 5"
+    },
+    {
+      src: "/images/gallery/6.webp",
+      alt: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ - Imagen 6"
+    },
+    {
+      src: "/images/gallery/7.webp",
+      alt: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ - Imagen 7"
+    },
+    {
+      src: "/images/gallery/8.webp",
+      alt: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ - Imagen 8"
+    },
+    {
+      src: "/images/gallery/9.webp",
+      alt: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ - Imagen 9"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Por qué elegir Centro Integral Estética Vanesa López?",
+      answer: "Con más de 19 años de experiencia y una valoración de 4.7 estrellas en Google con 47 reseñas, somos el centro de estética de referencia en Ciudad Real. Nuestras clientas nos eligen por la calidad excepcional de nuestros servicios, especialmente en depilación, manicura y pedicura, y por el trato profesional y cercano de Vanesa y Raquel. Muchas de nuestras clientas llevan más de 10 años confiando en nosotras, e incluso vienen desde otras ciudades para seguir cuidando su belleza con nuestro equipo."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Cómo puedo reservar mi cita?",
+      answer: "Reservar tu cita es muy sencillo. Puedes llamarnos directamente al 616 29 97 01 o escribirnos por WhatsApp al mismo número. Te atenderemos personalmente para encontrar el mejor horario según tu disponibilidad y el tratamiento que desees. Recomendamos reservar con antelación, especialmente para servicios como manicura, pedicura y maquillaje profesional, ya que tenemos alta demanda."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Qué servicios son los más demandados en el centro?",
+      answer: "Nuestros servicios estrella son la depilación profesional, especialmente el diseño y depilación de cejas, y nuestras manicuras y pedicuras realizadas por Raquel, que tienen una demanda excepcional por su calidad y duración. También destacamos en tratamientos faciales personalizados y maquillaje profesional para eventos. Todos nuestros servicios cuentan con valoraciones excelentes de nuestras clientas."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué diferencia a vuestras manicuras y pedicuras?",
+      answer: "Nuestras manicuras y pedicuras son reconocidas por su calidad excepcional y atención al detalle. Raquel, nuestra especialista, utiliza técnicas profesionales y productos premium que garantizan acabados impecables y de larga duración. El cuidado integral incluye tratamiento de cutículas, hidratación profunda y aplicación perfecta de esmaltes de alta gama. Muchas clientas destacan que son las mejores que han probado en Ciudad Real."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Ofrecéis tratamientos faciales personalizados?",
+      answer: "Sí, en Centro Integral Estética Vanesa López realizamos un análisis completo de tu tipo de piel para diseñar tratamientos faciales totalmente personalizados. Utilizamos productos profesionales de marcas premium adaptados a las necesidades específicas de cada piel: hidratación, antiedad, luminosidad o tratamiento de imperfecciones. Nuestro objetivo es que tu piel luzca radiante y saludable con protocolos que realmente funcionan."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Realizáis depilación láser?",
+      answer: "Sí, ofrecemos depilación láser con tecnología de última generación para la eliminación definitiva del vello. Este tratamiento es seguro, efectivo y se adapta a diferentes tipos de piel y vello. Las sesiones son rápidas y los resultados son permanentes, permitiéndote disfrutar de una piel suave sin preocuparte por la depilación tradicional. Te asesoraremos sobre el número de sesiones necesarias según tu caso particular."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Qué incluye el servicio de maquillaje profesional?",
+      answer: "Nuestro servicio de maquillaje profesional incluye asesoramiento personalizado, preparación de la piel y aplicación de maquillaje adaptado a tu evento especial: bodas, celebraciones o cualquier ocasión importante. Utilizamos productos de alta gama de larga duración para garantizar que tu maquillaje se mantenga impecable durante horas. También ofrecemos pruebas previas para bodas y eventos importantes para que estés completamente segura del resultado."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Cuánto tiempo lleváis cuidando de la belleza en Ciudad Real?",
+      answer: "Centro Integral Estética Vanesa López lleva más de 19 años siendo referencia en belleza y estética en Ciudad Real. Esta amplia experiencia nos ha permitido perfeccionar nuestras técnicas y construir relaciones de confianza duraderas con nuestras clientas. Muchas de ellas llevan más de 10 años viniendo al centro, y algunas incluso se desplazan desde otras ciudades porque valoran la calidad de nuestro trabajo y el trato profesional que ofrecemos."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ",
+    defaultTitle: "Centro Estética Vanesa López | Ciudad Real",
+    defaultDescription: "Centro de estética en Ciudad Real con +19 años de experiencia. Especialistas en depilación, manicura, pedicura y tratamientos faciales. Valoración 4.7★. Llama al 616 29 97 01",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
+      "centro estética Ciudad Real",
+      "depilación Ciudad Real",
+      "manicura Ciudad Real",
+      "pedicura Ciudad Real",
+      "tratamientos faciales Ciudad Real",
+      "Vanesa López Ciudad Real",
+      "depilación cejas Ciudad Real",
+      "maquillaje profesional Ciudad Real",
+      "micropigmentación Ciudad Real",
+      "depilación láser Ciudad Real",
       "estética Ciudad Real",
+      "centro belleza Ciudad Real"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "CENTRO INTEGRAL ESTÉTICA VANESA LÓPEZ",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "C. Estación Vía Crucis, 2, 13003 Ciudad Real, España, Ciudad Real"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
+  heroHeadline: [
+    "Tu Centro de",
+    "Belleza",
+    "en Ciudad Real"
+  ],
+  heroDescription: "En pleno corazón de Ciudad Real, Vanesa López y su equipo transforman tu belleza con tratamientos profesionales y personalizados. Más de 19 años de experiencia nos avalan como el centro de estética de confianza donde cada detalle cuenta para que salgas radiante.",
+  specialty: "Depilación y Manicura",
   ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
+  ctaHeadline: "¿Lista para verte y sentirte radiante?",
+  ctaDescription: "Reserva tu cita en el centro de estética con mejor valoración de Ciudad Real. Llámanos al 616 29 97 01 y descubre por qué nuestras clientas confían en nosotras desde hace años.",
   statsLabel: "Clientas",
   schemaType: "BeautySalon",
   sectionCopy: {
@@ -300,8 +366,8 @@ export const clinic = {
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
     teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamDescription: "Experiencia y pasión al servicio de tu belleza"
+  }
 }
 
 export type Clinic = typeof clinic
